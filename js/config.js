@@ -18,11 +18,11 @@ window.CONFIG = {
   // Coloque os arquivos na pasta "fotos/" e liste aqui, na ordem que quiser.
   // Use JPG ou PNG (HEIC do iPhone não abre em todo navegador).
   fotos: [
-    { arquivo: "fotos/1.jpg", legenda: "",  data: "2026" },
-    { arquivo: "fotos/2.jpg", legenda: "",         data: "2026" },
-    { arquivo: "fotos/3.jpg", legenda: "",      data: "2026" },
-    { arquivo: "fotos/4.jpg", legenda: "",             data: "2026" },
-    { arquivo: "fotos/5.jpg", legenda: "",    data: "2026" },
-    { arquivo: "fotos/6.jpg", legenda: "",             data: "2026" }
+    { arquivo: "fotos/01.jpg", legenda: "",  data: "2026" },
+    { arquivo: "fotos/02.jpg", legenda: "",         data: "2026" },
+    { arquivo: "fotos/03.jpg", legenda: "",      data: "2026" },
+    { arquivo: "fotos/04.jpg", legenda: "",             data: "2026" },
+    { arquivo: "fotos/05.jpg", legenda: "",    data: "2026" },
+    { arquivo: "fotos/06.jpg", legenda: "",             data: "2026" }
   ]
 };
