@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#EEF3FB">
+  <title>Surpresa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- CAPA: aparece primeiro, quem escaneou o QR clica pra abrir -->
+  <section id="capa" class="capa">
+    <p id="capaDica" class="capa__dica"></p>
+    <h1 id="capaTitulo"></h1>
+    <div class="capa__acao">
+      <button id="btnAbrir" class="btn-caneta" type="button"></button>
+      <svg class="traco" viewBox="0 0 300 20" aria-hidden="true" preserveAspectRatio="none">
+        <path pathLength="1" d="M2 12 C 30 2, 50 22, 80 10 S 140 2, 170 12 S 240 22, 298 8"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ÁLBUM -->
+  <main id="album" class="album" hidden>
+    <header class="album__topo">
+      <h2 id="albumTitulo"></h2>
+      <p id="albumSub"></p>
+    </header>
+
+    <div id="mural" class="mural"></div>
+
+  </main>
+
+  <!-- VISUALIZADOR -->
+  <div id="lb" class="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button id="lbFechar" class="lb__btn lb__fechar" type="button" aria-label="Fechar">✕</button>
+    <div class="lb__palco"><img id="lbImg" alt=""></div>
+    <div class="lb__rodape">
+      <button id="lbAnt" class="lb__btn" type="button" aria-label="Foto anterior">‹</button>
+      <div class="lb__legenda">
+        <p id="lbLegenda"></p>
+        <small id="lbContagem"></small>
+      </div>
+      <button id="lbProx" class="lb__btn" type="button" aria-label="Próxima foto">›</button>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
